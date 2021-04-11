@@ -7,4 +7,3 @@ g++ -Wall -std=c++14 main.cpp -o ./build/main
 
 ```
  - Limite deve ser um inteiro. 
- - Limite pode ser deixado em branco, nesse caso, não será adicionado limite no while de expand
