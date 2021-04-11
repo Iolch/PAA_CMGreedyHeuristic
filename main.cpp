@@ -154,8 +154,7 @@ int main(int argc, char * argv[]){
         return 0;
     }
     std::string filepath = argv[1];
-    std::string limit = "0";
-    if(argv[2]) limit = argv[2];
+    if(argv[2]) limitIter = std::stoi(argv[2]);
 
     // Iniciando contagem de tempo
     auto start = std::chrono::steady_clock::now();
