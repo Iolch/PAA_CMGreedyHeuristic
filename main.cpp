@@ -125,8 +125,10 @@ void greedy(std::map<std::string, std::vector<std::string>> &neighboursMatrix, s
 
             //caso tenha encontrado uma solução
             if((int)comumNeighbours.size() == 0){
-                shouldStop = 0;
-                if(clique.size() > cliqueMax.size()) cliqueMax = clique;    // retorna a solução
+                if(clique.size() > cliqueMax.size()) {
+                    shouldStop = 0;
+                    cliqueMax = clique;    // retorna a solução
+                }
             }else{
                 greedy(neighboursMatrix, comumNeighbours, shouldStop, clique);
             }
